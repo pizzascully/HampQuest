@@ -3,21 +3,33 @@
     "result": {
         "passages": [
             {
-                "Body": "''HampBot Test'' \n\nHey there! \n\n[[Who are you?|Text Option 1]] \n[[Who am I?|Text Option 2]] ",
+                "Body": "Welcome to HampQuest\nThis is the 3D World that represents Hampshire College Campus! You can look around by moving your mouse around the screen. When you see [[Blue text|Text 2]] like this, click on it!",
                 "Name": "Dialouge Test",
                 "Pid": "1",
                 "Tags": ""
             },
             {
-                "Body": "''HampBot Test'' \n\nI am a robot person.\n\n[[Okay|Dialouge Test]]",
-                "Name": "Text Option 1",
+                "Body": "The blue text is what is called a link! links change the text that appears in the box at the bottom of your screen. Useually the link will describe what kind of text will appear. You can also scroll down if your cursor is on this box, to see if there is more text below what is immidiately visable. \n[[Back|Dialouge Test]] | [[Next|Text 3]] \n",
+                "Name": "Text 2",
                 "Pid": "2",
                 "Tags": ""
             },
             {
-                "Body": "''HampBot Test'' \n\nYou are a robot person.\n\n#[[Okay|Dialouge Test]] ",
-                "Name": "Text Option 2",
+                "Body": "You can explore the rest of campus by using the WSAD keys on your keyboard. W is used to move forward, A and D are used to move from side to side, and S is used to move backwards. \n[[Back|Text 2]] | [[Next|Text 4]]\n",
+                "Name": "Text 3",
                 "Pid": "3",
+                "Tags": ""
+            },
+            {
+                "Body": "Additionally, you can use the spacebar to jump, and if you hold down the left shiftkey while moving, you will move much more quickly. \n[[Back|Text 3]] | [[Next|Text 5]]\n",
+                "Name": "Text 4",
+                "Pid": "4",
+                "Tags": ""
+            },
+            {
+                "Body": "This version of HampQuest isn't final and is subject to change. The campus is large and it takes time to perfect a virtual version of it. The majority of the buildings were not modeled for HampQuest. They were amade for another Div 3 by Fletcher West who had a simmilar vision of making a virtual campus. The Kern model file was distributed to us by Bruner/Cott Architects. This virtual campus is and will be a construction assembled by many people and hopefully HampQuest can be a platform for continuing work on this idea of a virtual campus space. \n[[Back|Text 4]] ",
+                "Name": "Text 5",
+                "Pid": "5",
                 "Tags": ""
             }
         ],

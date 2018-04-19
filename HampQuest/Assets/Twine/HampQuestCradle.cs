@@ -51,6 +51,8 @@ public partial class @HampQuestCradle: Cradle.StoryFormats.Sugar.SugarStory
 		passage1_Init();
 		passage2_Init();
 		passage3_Init();
+		passage4_Init();
+		passage5_Init();
 	}
 
 	// ---------------
@@ -66,62 +68,93 @@ public partial class @HampQuestCradle: Cradle.StoryFormats.Sugar.SugarStory
 
 	IStoryThread passage1_Main()
 	{
-		yield return text(@"''HampBot Test'' ");
+		yield return text(@"Welcome to HampQuest");
 		yield return lineBreak();
-		yield return lineBreak();
-		yield return text(@"Hey there! ");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link(@"Who are you?", @"Text Option 1", null);
-		yield return text(@" ");
-		yield return lineBreak();
-		yield return link(@"Who am I?", @"Text Option 2", null);
-		yield return text(@" ");
+		yield return text(@"This is the 3D World that represents Hampshire College Campus! You can look around by moving your mouse around the screen. When you see ");
+		yield return link(@"Blue text", @"Text 2", null);
+		yield return text(@" like this, click on it!");
 		yield return lineBreak();
 		yield break;
 	}
 
 
 	// .............
-	// #2: Text Option 1
+	// #2: Text 2
 
 	void passage2_Init()
 	{
-		this.Passages[@"Text Option 1"] = new StoryPassage(@"Text Option 1", new string[]{  }, passage2_Main);
+		this.Passages[@"Text 2"] = new StoryPassage(@"Text 2", new string[]{  }, passage2_Main);
 	}
 
 	IStoryThread passage2_Main()
 	{
-		yield return text(@"''HampBot Test'' ");
+		yield return text(@"The blue text is what is called a link! links change the text that appears in the box at the bottom of your screen. Useually the link will describe what kind of text will appear. You can also scroll down if your cursor is on this box, to see if there is more text below what is immidiately visable. ");
 		yield return lineBreak();
+		yield return link(@"Back", @"Dialouge Test", null);
+		yield return text(@" | ");
+		yield return link(@"Next", @"Text 3", null);
+		yield return text(@" ");
 		yield return lineBreak();
-		yield return text(@"I am a robot person.");
-		yield return lineBreak();
-		yield return lineBreak();
-		yield return link(@"Okay", @"Dialouge Test", null);
 		yield return lineBreak();
 		yield break;
 	}
 
 
 	// .............
-	// #3: Text Option 2
+	// #3: Text 3
 
 	void passage3_Init()
 	{
-		this.Passages[@"Text Option 2"] = new StoryPassage(@"Text Option 2", new string[]{  }, passage3_Main);
+		this.Passages[@"Text 3"] = new StoryPassage(@"Text 3", new string[]{  }, passage3_Main);
 	}
 
 	IStoryThread passage3_Main()
 	{
-		yield return text(@"''HampBot Test'' ");
+		yield return text(@"You can explore the rest of campus by using the WSAD keys on your keyboard. W is used to move forward, A and D are used to move from side to side, and S is used to move backwards. ");
+		yield return lineBreak();
+		yield return link(@"Back", @"Text 2", null);
+		yield return text(@" | ");
+		yield return link(@"Next", @"Text 4", null);
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text(@"You are a robot person.");
+		yield break;
+	}
+
+
+	// .............
+	// #4: Text 4
+
+	void passage4_Init()
+	{
+		this.Passages[@"Text 4"] = new StoryPassage(@"Text 4", new string[]{  }, passage4_Main);
+	}
+
+	IStoryThread passage4_Main()
+	{
+		yield return text(@"Additionally, you can use the spacebar to jump, and if you hold down the left shiftkey while moving, you will move much more quickly. ");
+		yield return lineBreak();
+		yield return link(@"Back", @"Text 3", null);
+		yield return text(@" | ");
+		yield return link(@"Next", @"Text 5", null);
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text(@"#");
-		yield return link(@"Okay", @"Dialouge Test", null);
+		yield break;
+	}
+
+
+	// .............
+	// #5: Text 5
+
+	void passage5_Init()
+	{
+		this.Passages[@"Text 5"] = new StoryPassage(@"Text 5", new string[]{  }, passage5_Main);
+	}
+
+	IStoryThread passage5_Main()
+	{
+		yield return text(@"This version of HampQuest isn't final and is subject to change. The campus is large and it takes time to perfect a virtual version of it. The majority of the buildings were not modeled for HampQuest. They were amade for another Div 3 by Fletcher West who had a simmilar vision of making a virtual campus. The Kern model file was distributed to us by Bruner/Cott Architects. This virtual campus is and will be a construction assembled by many people and hopefully HampQuest can be a platform for continuing work on this idea of a virtual campus space. ");
+		yield return lineBreak();
+		yield return link(@"Back", @"Text 4", null);
 		yield return text(@" ");
 		yield return lineBreak();
 		yield break;
