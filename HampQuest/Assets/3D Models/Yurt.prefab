@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1615540690582096}
+  m_IsPrefabParent: 1
+--- !u!1 &1615540690582096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4413631063743330}
+  - component: {fileID: 33808223948630478}
+  - component: {fileID: 23506335198773074}
+  - component: {fileID: 64158971581200078}
+  - component: {fileID: 114343736527510694}
+  m_Layer: 0
+  m_Name: Yurt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4413631063743330
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615540690582096}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 59.795, y: -0.20999908, z: 161.73041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23506335198773074
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615540690582096}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d5953d03d74eb6e4580ac93de7ba8ef5, type: 2}
+  - {fileID: 2100000, guid: 143c48ce319b96f49b50011cfdb27847, type: 2}
+  - {fileID: 2100000, guid: 514cf00dff8155044a2226220a6f81f5, type: 2}
+  - {fileID: 2100000, guid: 254a3a56d9b4f064fa024d754d15c016, type: 2}
+  - {fileID: 2100000, guid: 86b6679c387039743bb50f7f7bc39506, type: 2}
+  - {fileID: 2100000, guid: edf00921c5f4ea548afd766fb64812c1, type: 2}
+  - {fileID: 2100000, guid: 648facda5bf047946bfd8ded18aec71c, type: 2}
+  - {fileID: 2100000, guid: c1bd23f8d3b7ac84082b9fc20bbe8a55, type: 2}
+  - {fileID: 2100000, guid: ff048d69ccb7f1a4d925accc84ddb135, type: 2}
+  - {fileID: 2100000, guid: 5553665425778ee46bc2e18228ac76ba, type: 2}
+  - {fileID: 2100000, guid: d85622367129e0343ace9810de758177, type: 2}
+  - {fileID: 2100000, guid: 5f207a012395db446aebfe9e51616e85, type: 2}
+  - {fileID: 2100000, guid: 25648600d76be5d4b8cef9d30c96275d, type: 2}
+  - {fileID: 2100000, guid: 7ae32509a9fed2e41803a5f38361743b, type: 2}
+  - {fileID: 2100000, guid: 1e7ad8c999dd12941a30e428f5e25d18, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33808223948630478
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615540690582096}
+  m_Mesh: {fileID: 4300000, guid: cb5726b5bf1af437c83e60c1fe1a5de5, type: 3}
+--- !u!64 &64158971581200078
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615540690582096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: cb5726b5bf1af437c83e60c1fe1a5de5, type: 3}
+--- !u!114 &114343736527510694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615540690582096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1de049c2ef44ccfbdb556ccd606bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: The Yurt
+  description: Home of Yurt Radio
+  displayKey: 0
+  giveInformation: 0
+  uiElement: {fileID: 0}
+  fadeTime: 2
+  infoText: {fileID: 0}
+  infoBox: {fileID: 0}
